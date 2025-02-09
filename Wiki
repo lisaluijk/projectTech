@@ -1,1 +1,25 @@
 In this document I will be documenting my process and research. 
+
+**markdown notes**
+Deocrating text:
+Bold = **
+Italic = _
+
+Headings
+#, use the amount of hashtags corresponding to the header type (1,2,3,...)
+
+links
+[this text will be displayed](this will become the link)
+
+You can also make a reference link:
+[this text will be displayed][link to the site]
+[link to the site]: www.google.com
+
+images
+![A pretty tiger](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)
+
+blockquote = >
+
+unordered list = *
+ordered list = 1., 2. etc
+use two spaces for line breaks
