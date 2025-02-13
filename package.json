@@ -1,0 +1,23 @@
+{
+  "name": "projecttech",
+  "version": "1.0.0",
+  "description": "oefenen met server bouwen",
+  "homepage": "https://github.com/lisaluijk/projectTech#readme",
+  "bugs": {
+    "url": "https://github.com/lisaluijk/projectTech/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisaluijk/projectTech.git"
+  },
+  "license": "ISC",
+  "author": "Meeeeeeeeeee",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
