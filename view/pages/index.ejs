@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>New User</title>
+</head>
+<body>
+    <h1>New User Form Registration</h1>
+    <form id="newUserForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <fieldset>
+            <legend>Klaar met de leef?</legend>
+            
+            <input type="radio" id="ja" value="ja" required>
+            <label id="ja" for="ja">Ofocurse</label>
+            <input type="radio" id="zeker" value="zeker" required>
+            <label id="ja" for="ja">Zekers</label>
+        </fieldset>
+
+        <label for="favcolor">What color makes you happy?:</label>
+        <input type="color" id="favcolor" name="favcolor">
+
+    </form>
+</body>
+</html>
