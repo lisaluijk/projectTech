@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
-    <title>New User</title>
+  <%- include('../partials/head'); %>
 </head>
-<body>
-    <h1>New User Form Registration</h1>
-    <form id="newUserForm" action="/submit">
-        <label for="username">Username:</label>
-        <input type="text" id="username" required>
+<body class="container">
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" required>
+<header>
+  <%- include('../partials/header'); %>
+</header>
 
-        <fieldset>
-            <legend>Klaar met de leef?</legend>
-            
-            <input type="radio" id="ja" value="ja" required>
-            <label id="ja" for="ja">Ofocurse</label>
-            <input type="radio" id="zeker" value="zeker" required>
-            <label id="ja" for="ja">Zekers</label>
-        </fieldset>
+<main>
+  <div class="jumbotron">
+    <h1>This is great</h1>
+    <p>Welcome to templating using EJS</p>
 
-        <label for="favcolor">What color makes you happy?:</label>
-        <input type="color" id="favcolor" name="favcolor">
+    <h2>Variable</h2>
+    <p><%= tagline %></p>
 
-        <input type="submit">
+    <ul>
+      <% mascots.forEach(function(mascot) { %>
+        <li>
+          <strong><%= mascot.name %></strong>
+          representing <%= mascot.organization %>,
+          born <%= mascot.birth_year %>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+</main>
 
-    </form>
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
 </body>
 </html>
