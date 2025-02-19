@@ -22,7 +22,6 @@ form {
 label {
     display: block;
     margin-bottom: 8px;
-    
 }
 
 input[type="text"], input[type="password"] {
@@ -31,4 +30,12 @@ input[type="text"], input[type="password"] {
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
+}
+
+.error {
+    background-color: #e9eae0aa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(40, 40, 124);
 }

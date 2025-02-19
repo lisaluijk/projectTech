@@ -13,12 +13,16 @@ app.get('/', onHome);
 app.get('/egg?', onEasterEgg);
 app.get('/submit', onSubmit);
 
+app.use((req, res, next) => {
+    res.render('error.ejs')
+})
+
 function onHome(req, res){
     res.render('index.ejs');
 }
 
 function onEasterEgg(req, res){
-    res.send('<h1>serveren</h1?');
+    res.send('<h1>serveren</h1>');
 }
 
 function onSubmit(req,res){
